@@ -46,4 +46,4 @@ print(b) # Output: [1.0 -- -- s4.0]
 
 ## Exercise
 
-Now, please use the`np.ma`module provided by numoy to complete the creation of mask array. At the same time, use the `np.ma.masked_where()` function to apply the mask to the array, and finally use the `np.ma.masked_invalid（）`to handle invalid values. Please complete this exercise.
+Now, please use the`np.ma`module provided by numoy to complete the creation of mask array. At the same time, use the `np.ma.masked_where()` function to apply the mask to the array, and finally use the `np.ma.masked_invalid()`to handle invalid values. Please complete this exercise.

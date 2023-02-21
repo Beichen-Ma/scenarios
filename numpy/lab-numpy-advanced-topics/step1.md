@@ -2,15 +2,17 @@
 
 NumPy has a comprehensive set of functions for linear algebra operations. Here are a few examples:
 
-## Dot Product
+## Open the Python Shell
 
-The dot product of two arrays can be calculated using `np.dot()` function. The dot product of two arrays A and B is defined as the sum of the product of corresponding elements of A and B.
-
-Open up a new Python interpreter.
+Open the Python shell by typing the following command in the terminal.
 
 ```bash
 python3
 ```
+
+## Dot Product
+
+The dot product of two arrays can be calculated using `np.dot()` function. The dot product of two arrays A and B is defined as the sum of the product of corresponding elements of A and B.
 
 ```python
 import numpy as np
@@ -73,4 +75,4 @@ print(inv_A) # Output: [[-2.   1. ], [ 1.5 -0.5]]
 
 ## Exercise
 
-Now it's your turn to construct two arrays and use the `np.dot()` function to calculate the dot product. Use `@` or `np.matmul()`to calculate matrix multiplication and use `np.linalg.det()` and `np.linalg.inv()` functions to calculate matrix determinant and inverse matrix.S
+Now it's your turn to construct two arrays and use the `np.dot()` function to calculate the dot product. Use `@` or `np.matmul()`to calculate matrix multiplication and use `np.linalg.det()`and `np.linalg.inv()`functions to calculate matrix determinant and inverse matrix.S

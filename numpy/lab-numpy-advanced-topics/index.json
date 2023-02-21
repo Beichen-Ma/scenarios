@@ -11,6 +11,13 @@
         "text": "step1.md",
         "verify": [
           {
+            "name": "Check if open the Python shell",
+            "file": "verify0-0.sh",
+            "hint": "You need to open the Python shell to continue.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
             "name": "Check whether dot is entered.",
             "file": "verify1-0.sh",
             "hint": "You need to enter dot to continue.",
@@ -100,6 +107,6 @@
     }
   },
   "backend": {
-    "imageid": "vnc-ubuntu:2204"
+    "imageid": "webide-ubuntu:2204"
   }
 }
