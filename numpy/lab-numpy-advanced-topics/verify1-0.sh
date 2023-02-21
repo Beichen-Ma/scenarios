@@ -1,1 +1,1 @@
-grep -E "np\.array|np\.dot" ~/.python_history
+grep -E "np.array|np.dot" ~/.python_history
