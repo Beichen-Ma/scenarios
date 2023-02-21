@@ -1,0 +1,56 @@
+{
+    "type": "challenge",
+    "title": "Find Pair",
+    "description": "In this experiment, you will implement a function that takes in the list of integers and the target value as parameters, and returns a tuple containing the indices of two elements in the list that add up to the target value. If there are multiple valid pairs, the function should return the indices of the first valid pair encountered.",
+    "difficulty": "Beginner",
+    "time": 5,
+    "details": {
+        "steps": [
+            {
+                "title": "Find Pair",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Test the implement of find_pair",
+                        "file": "verify1.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/for_loop",
+                    "python/if_else",
+                    "python/return_values",
+                    "python/function_basic",
+                    "python/function_arguments",
+                    "python/tuple",
+                    "python/list"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "find_pair.py",
+                    "target": "/home/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "*_test.py",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2004"
+    }
+}
