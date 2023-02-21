@@ -1,0 +1,127 @@
+{
+    "type": "challenge",
+    "title": "Data Types Manipulation",
+    "description": "In this challenge, you will be working with different Python data types such as strings, integers, lists, dictionaries and tuples.",
+    "difficulty": "Beginner",
+    "time": 20,
+    "details": {
+        "steps": [
+            {
+                "title": "String Manipulation",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Test the implement of string_manipulation",
+                        "file": "verify1.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/data_types",
+                    "python/return_values",
+                    "python/function_basic",
+                    "python/function_arguments"
+                ]
+            },
+            {
+                "title": "List Operations",
+                "text": "step2.md",
+                "verify": [
+                    {
+                        "name": "Test the implement of list_operations",
+                        "file": "verify2.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/list",
+                    "python/return_values",
+                    "python/function_basic",
+                    "python/function_arguments"
+                ]
+            },
+            {
+                "title": "Dictionary Operations",
+                "text": "step3.md",
+                "verify": [
+                    {
+                        "name": "Test the implement of dictionary_operations",
+                        "file": "verify3.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/data_types",
+                    "python/dict",
+                    "python/return_values",
+                    "python/function_basic",
+                    "python/function_arguments"
+                ]
+            },
+            {
+                "title": "Tuple Operations",
+                "text": "step4.md",
+                "verify": [
+                    {
+                        "name": "Test the implement of tuple_operations",
+                        "file": "verify4.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/data_types",
+                    "python/tuple",
+                    "python/return_values",
+                    "python/function_basic",
+                    "python/function_arguments"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "string_manipulation.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "list_operations.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "dictionary_operations.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "tuple_operations.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "*_test.py",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    }
+}
