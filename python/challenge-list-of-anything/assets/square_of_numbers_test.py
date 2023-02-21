@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append("/home/project")
+sys.path.append("/home/labex/project")
 
 import unittest
 from square_of_numbers import square_of_numbers

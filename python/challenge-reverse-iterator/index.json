@@ -59,12 +59,12 @@
       "host01": [
         {
           "file": "myiterator.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
         {
           "file": "reverseiterator.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
         {

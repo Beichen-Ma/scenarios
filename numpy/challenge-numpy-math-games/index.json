@@ -119,27 +119,27 @@
       "host01": [
         {
           "file": "multiply_arrays.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
         {
           "file": "matrix_multiply.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
         {
           "file": "transpose_array.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
         {
           "file": "reshape_array.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
         {
           "file": "euclidean_distance.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
         {

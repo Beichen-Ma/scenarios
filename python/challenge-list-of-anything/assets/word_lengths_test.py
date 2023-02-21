@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append("/home/project")
+sys.path.append("/home/labex/project")
 
 import unittest
 from word_lengths import word_lengths

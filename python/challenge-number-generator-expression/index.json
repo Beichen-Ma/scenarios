@@ -88,27 +88,27 @@
       "host01": [
         {
           "file": "square_numbers.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
         {
           "file": "even_numbers.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
         {
           "file": "running_total.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
         {
           "file": "fiboannci.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
         {
           "file": "factorial.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
 

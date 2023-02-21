@@ -41,7 +41,7 @@
       "host01": [
         {
           "file": "date_flip.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
         {
