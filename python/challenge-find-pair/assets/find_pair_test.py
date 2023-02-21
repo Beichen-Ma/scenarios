@@ -1,3 +1,7 @@
+import sys
+
+sys.path.append("/home/labex/project")
+
 import unittest
 
 from typing import List, Tuple
