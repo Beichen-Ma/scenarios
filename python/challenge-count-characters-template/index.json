@@ -32,7 +32,7 @@
       "host01": [
         {
           "file": "count_characters.py",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },
         {
