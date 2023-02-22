@@ -1,0 +1,76 @@
+{
+  "type": "challenge",
+  "title": "File Operate Like A Boss",
+  "description": "File Operate Like A Boss",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Create What You Want",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implement of folder_create",
+            "file": "verify1.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/os_module", "python/if_else"]
+      },
+      {
+        "title": "File Travel",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implement of file_move",
+            "file": "verify2.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/os_module", "python/if_else"]
+      },
+      {
+        "title": "Count and Clean All",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implement of folder_delete",
+            "file": "verify3.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/os_module", "python/len"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp"
+        },
+        {
+          "file": "*",
+          "target": "/home/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

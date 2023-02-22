@@ -1,0 +1,139 @@
+{
+  "type": "challenge",
+  "title": "Time Flies When Time Trials",
+  "description": "Improve your Python time and date manipulation skills with this challenge.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "What Time Is It?",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "check script file",
+            "file": "verify1-1.sh",
+            "hint": "file 'current_time.py' not existed",
+            "timeout": 1,
+            "showstderr": false
+          },
+          {
+            "name": "check console output",
+            "file": "verify1-2.sh",
+            "hint": "nothing printed on the console",
+            "timeout": 1,
+            "showstderr": false
+          },
+          {
+            "name": "check current time",
+            "file": "verify1-3.sh",
+            "hint": "current time not correct",
+            "timeout": 1,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/datetime_module"]
+      },
+      {
+        "title": "What Time Is Next?",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "check script file",
+            "file": "verify2-1.sh",
+            "hint": "file 'next_days.py' not existed",
+            "timeout": 1,
+            "showstderr": false
+          },
+          {
+            "name": "check console output",
+            "file": "verify2-2.sh",
+            "hint": "nothing printed on the console",
+            "timeout": 1,
+            "showstderr": false
+          },
+          {
+            "name": "check next 10 day",
+            "file": "verify2-3.sh",
+            "hint": "not correct date when calculate next 10 day",
+            "timeout": 1,
+            "showstderr": false
+          },
+          {
+            "name": "check next 100 day",
+            "file": "verify2-4.sh",
+            "hint": "not correct date when calculate next 100 day",
+            "timeout": 1,
+            "showstderr": false
+          },
+          {
+            "name": "check next 1000 day",
+            "file": "verify2-5.sh",
+            "hint": "not correct date when calculate next 1000 day",
+            "timeout": 1,
+            "showstderr": false
+          },
+          {
+            "name": "check next 10000 day is correct printed",
+            "file": "verify2-6.sh",
+            "hint": "not correct date when calculate next 10000 day",
+            "timeout": 1,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/datetime_module",
+          "python/for_loop",
+          "python/the_range_function"
+        ]
+      },
+      {
+        "title": "Convert Your Time",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "check script file",
+            "file": "verify3-1.sh",
+            "hint": "file 'date_time_convert.py' not existed",
+            "timeout": 1,
+            "showstderr": false
+          },
+          {
+            "name": "check function name",
+            "file": "verify3-2.sh",
+            "hint": "function `date_time_convert` not existed",
+            "timeout": 1,
+            "showstderr": false
+          },
+          {
+            "name": "check date time convert",
+            "file": "verify3-3.sh",
+            "hint": "not correct when convert date time",
+            "timeout": 1,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/datetime_module", "python/manipulating_strings"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*",
+          "target": "~/",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

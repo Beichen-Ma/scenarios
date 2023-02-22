@@ -1,0 +1,91 @@
+{
+  "type": "challenge",
+  "title": "Simplify Your Code Pythonic",
+  "description": "Writing Pythonic code has many advantages",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Sum Integers",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implement of sum_n",
+            "file": "verify1.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/sum", "python/generator_expression"]
+      },
+      {
+        "title": "Concatenate Strings",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implement of concat_strings",
+            "file": "verify2.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/manipulating_strings"]
+      },
+      {
+        "title": "Get Grade",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implement of get_grade",
+            "file": "verify3.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/dict", "python/next"]
+      },
+      {
+        "title": "Sum Two Lists",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the implement of sum_two_lists",
+            "file": "verify4.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/zip", "python/list_comprehension"]
+      },
+      {
+        "title": "Flatten List",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the implement of flatten_list",
+            "file": "verify5.sh",
+            "hint": "Test error",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/list_comprehension"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

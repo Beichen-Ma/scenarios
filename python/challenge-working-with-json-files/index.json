@@ -1,0 +1,78 @@
+{
+  "type": "challenge",
+  "title": "Working With JSON Files",
+  "description": "Working With JSON Files",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Read and Count",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the count is correct",
+            "file": "verify1.sh",
+            "hint": "The count result is not correct.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/for_loop",
+          "python/json",
+          "python/len",
+          "python/open",
+          "python/print"
+        ]
+      },
+      {
+        "title": "Write Together",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check the list file",
+            "file": "verify2.sh",
+            "hint": "The content of list json file is not correct.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/rw_files", "python/list"]
+      },
+      {
+        "title": "Search What I Want",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check the script is correct",
+            "file": "verify3.sh",
+            "hint": "The output in console is not correct.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sys", "python/json", "python/format_specifiers"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*",
+          "target": "/home/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
