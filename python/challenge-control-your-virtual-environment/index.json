@@ -1,0 +1,77 @@
+{
+  "type": "challenge",
+  "title": "Control Your Virtual Environment",
+  "description": "Test how you know the python virtual environment.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Create Your First Environment",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if python virtual environment created",
+            "file": "verify1.sh",
+            "hint": "Please create a Python virtual environment named `venv`",
+            "timeout": 1,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/virtual_environments"]
+      },
+      {
+        "title": "Install a Package",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if flask installed",
+            "file": "verify2.sh",
+            "hint": "Please install flask in `venv`",
+            "timeout": 1,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/virtual_environments", "python/pypi"]
+      },
+      {
+        "title": "Import Your Installed Package",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if flask imported",
+            "file": "verify3.sh",
+            "hint": "Please import flask in Python console",
+            "timeout": 1,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/packages"]
+      },
+      {
+        "title": "Exit and Finish",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if exited venv",
+            "file": "verify4.sh",
+            "hint": "Please exit Python virtual environment",
+            "timeout": 1,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/virtual_environments"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

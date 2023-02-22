@@ -1,0 +1,1 @@
+cd /home/labex && ls | grep 'current_time.py'

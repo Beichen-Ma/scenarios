@@ -1,0 +1,1 @@
+source /home/project/venv/bin/activate && pip3 list | grep Flask

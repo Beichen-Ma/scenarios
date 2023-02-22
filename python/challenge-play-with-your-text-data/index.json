@@ -1,0 +1,90 @@
+{
+  "type": "challenge",
+  "title": "Play With Your Text Data",
+  "description": "Play With Your Text Data",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Word Total Count",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the word count is correct",
+            "file": "verify1.sh",
+            "hint": "Word count print is not correct",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/open", "python/len"]
+      },
+      {
+        "title": "High-Frequency Words",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check top 1st word",
+            "file": "verify2-1.sh",
+            "hint": "The top 1st word count is not correct",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check top 2nd word",
+            "file": "verify2-2.sh",
+            "hint": "The top 2 word count is not correct",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check top 3rd word",
+            "file": "verify2-3.sh",
+            "hint": "The top 3rd word count is not correct",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sorted", "python/dict"]
+      },
+      {
+        "title": "Words Line Up in Order",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check words line up in order",
+            "file": "verify3.sh",
+            "hint": "Words line up not in order",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/rw_files",
+          "python/manipulating_strings"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*",
+          "target": "/home/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

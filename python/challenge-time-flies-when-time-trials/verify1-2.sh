@@ -1,0 +1,1 @@
+cd /home/labex && python current_time.py | grep -E '*'
