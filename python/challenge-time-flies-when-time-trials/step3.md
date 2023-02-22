@@ -13,5 +13,5 @@ date_time_convert(date_str, time_str)
 
 ## Requirements
 
-- The path of `date_time_convert.py` is `/home/labex`, don't move it, and don't change the filename or function name.
+- The path of `date_time_convert.py` is `/home/labex/project`, don't move it, and don't change the filename or function name.
 - The `datetime` module should be used.

@@ -7,7 +7,7 @@ Now you should implement the `folder_delete` in `folder_delete.py`. It first cou
 for example:
 
 ```python
-file_len = folder_delete('/home/labex/your_folder')
+file_len = folder_delete('/home/labex/project/your_folder')
 # your_folder should be deleted, and if there are 3 files in the folder,
 # 3 will return.
 print(file_len)
@@ -16,4 +16,4 @@ print(file_len)
 
 ## Requirements
 
-- The path of `folder_delete.py` is `/home/labex`, don't move it, and don't change the filename or function name.
+- The path of `folder_delete.py` is `/home/labex/project`, don't move it, and don't change the filename or function name.

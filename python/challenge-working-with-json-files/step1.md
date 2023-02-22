@@ -16,5 +16,5 @@ For example, there are three elements in the above JSON data structure:
 
 ## Requirements
 
-- The path of `count.py` is `/home/labex`.
+- The path of `count.py` is `/home/labex/project`.
 - The count result should be `print` in the console.

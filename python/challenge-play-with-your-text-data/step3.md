@@ -18,6 +18,6 @@ code being
 
 ## Requirements
 
-- The path of the `output` folder is `/home/labex/`
+- The path of the `output` folder is `/home/labex/project/`
 - Word order in each file is not considered.
 - Punctuations are not words.

@@ -14,5 +14,5 @@ python json_search.py 1.json 1
 
 ## Requirements
 
-- The path of `json_search.py` is `/home/labex`.
+- The path of `json_search.py` is `/home/labex/project`.
 - Do nothing if the file or key is not in the JSON file.

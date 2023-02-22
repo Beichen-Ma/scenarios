@@ -5,7 +5,7 @@
 Create venv:
 
 ```bash
-cd /home/labex
+cd /home/labex/project
 virtualenv venv
 ```
 
@@ -14,7 +14,7 @@ virtualenv venv
 Activate venv and install flask:
 
 ```bash
-source /home/labex/venv/bin/activate
+source /home/labex/project/venv/bin/activate
 pip install flask
 ```
 

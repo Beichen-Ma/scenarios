@@ -1,1 +1,1 @@
-cd /home/labex && ls | grep 'next_days.py'
+cd /home/labex/project && ls | grep 'next_days.py'

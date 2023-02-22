@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append("/home/project")
+sys.path.append("/home/labex/project")
 
 import unittest
 from sum_n import sum_n

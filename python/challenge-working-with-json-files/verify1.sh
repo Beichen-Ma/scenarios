@@ -1,2 +1,2 @@
 #!/bin/zsh
-python /home/labex/count.py | grep 719
+python /home/labex/project/count.py | grep 719

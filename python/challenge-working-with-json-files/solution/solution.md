@@ -7,8 +7,8 @@ import os
 import json
 
 count = 0
-for filename in os.listdir('/home/labex/json_files'):
-    data = json.load(open(os.path.join('/home/labex/json_files', filename), 'r'))
+for filename in os.listdir('/home/labex/project/json_files'):
+    data = json.load(open(os.path.join('/home/labex/project/json_files', filename), 'r'))
     count += len(data)
 print(count)
 ```
@@ -20,12 +20,12 @@ import os
 import json
 
 merged = []
-for filename in os.listdir('/home/labex/json_files'):
-    data = json.load(open(os.path.join('/home/labex/json_files', filename), 'r'))
+for filename in os.listdir('/home/labex/project/json_files'):
+    data = json.load(open(os.path.join('/home/labex/project/json_files', filename), 'r'))
     for value in data.values():
         if isinstance(value, list):
             merged.append(value)
-with open('/home/labex/list.json', 'w') as f:
+with open('/home/labex/project/list.json', 'w') as f:
     json.dump(merged, f)
 ```
 

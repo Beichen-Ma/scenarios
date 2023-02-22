@@ -78,7 +78,7 @@
       "host01": [
         {
           "file": "*",
-          "target": "/home/project",
+          "target": "/home/labex/project",
           "chmod": "777"
         }
       ]

@@ -29,4 +29,4 @@ The two lists should be merged to `list.json` as follows:
 
 ## Requirements
 
-- The path of `list.json` is `/home/labex`.
+- The path of `list.json` is `/home/labex/project`.

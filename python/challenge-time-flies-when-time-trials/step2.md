@@ -20,6 +20,6 @@ in Python console.
 
 ## Requirements
 
-- The path of `next_days.py` is `/home/labex`, don't move it or change the filename.
+- The path of `next_days.py` is `/home/labex/project`, don't move it or change the filename.
 - The `datetime` module should be used.
 - The keyword `for` should be used.

@@ -1,0 +1,71 @@
+{
+  "type": "challenge",
+  "title": "File Permission",
+  "description": "Introduce how to change file permission in the Linux platform",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Create A File",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check for the existence of a file called target_file",
+            "file": "verify1.sh",
+            "hint": "Target_file file does not exist",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/touch", "linux/ls"]
+      },
+      {
+        "title": "Change The File Owner And Group",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if the ownership of the file has been changed",
+            "file": "verify2.sh",
+            "hint": "Please change the permissions of the file `target_file` to `user1:group1`",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/chown"]
+      },
+      {
+        "title": "Set The File Permissions",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if the file permissions are 750",
+            "file": "verify3.sh",
+            "hint": "Please set the permissions of file `target_file` to `750`",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/chmod"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2004"
+  }
+}

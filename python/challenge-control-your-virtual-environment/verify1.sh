@@ -1,1 +1,1 @@
-source /home/project/venv/bin/activate
+source /home/labex/project/venv/bin/activate

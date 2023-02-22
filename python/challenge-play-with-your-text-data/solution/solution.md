@@ -6,8 +6,8 @@
 import os
 
 total_len = 0
-for f in os.listdir('/home/labex/files'):
-    total_len += len(open(os.path.join('/home/labex/files', f), 'r').read().split())
+for f in os.listdir('/home/labex/project/files'):
+    total_len += len(open(os.path.join('/home/labex/project/files', f), 'r').read().split())
 
 print(total_len)
 ```
@@ -18,8 +18,8 @@ print(total_len)
 import os
 
 words_counter = {}
-for f in os.listdir('/home/labex/files'):
-    words = open(os.path.join('/home/labex/files', f), 'r').read().split()
+for f in os.listdir('/home/labex/project/files'):
+    words = open(os.path.join('/home/labex/project/files', f), 'r').read().split()
     for word in words:
         word = word.strip('.,')
         if word not in words_counter:
@@ -37,8 +37,8 @@ import os
 
 words_list = []
 
-for f in os.listdir('/home/labex/files'):
-    texts = open(os.path.join('/home/labex/files', f), 'r').read().split()
+for f in os.listdir('/home/labex/project/files'):
+    texts = open(os.path.join('/home/labex/project/files', f), 'r').read().split()
     words_list.append([text.strip(',.') for text in texts])
 
 
@@ -47,5 +47,5 @@ for i in range(max(words_count)):
     for word_list in words_list:
         if i <= len(word_list):
             words.append(word_list[i])
-    open(f'/home/labex/output/{i+1}', 'w').write(' '.join(words))
+    open(f'/home/labex/project/output/{i+1}', 'w').write(' '.join(words))
 ```

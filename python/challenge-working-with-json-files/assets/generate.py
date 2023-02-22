@@ -4,12 +4,12 @@ import json
 
 random.seed(1116)
 
-folder = '/home/labex/json_files'
+folder = '/home/labex/project/json_files'
 if not os.path.isdir(folder):
     os.mkdir(folder)
 
 for i in range(50):
-    file = f'/home/labex/json_files/{i}.json'
+    file = f'/home/labex/project/json_files/{i}.json'
     if os.path.isfile(file):
         continue
     json_file = {}

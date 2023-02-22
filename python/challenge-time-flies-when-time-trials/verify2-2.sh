@@ -1,1 +1,1 @@
-cd /home/labex && python next_days.py | grep -E '*'
+cd /home/labex/project && python next_days.py | grep -E '*'

@@ -17,5 +17,5 @@ python current_time.py
 
 ## Requirements
 
-- The path of `current_time.py` is `/home/labex`, don't move it or change the filename.
+- The path of `current_time.py` is `/home/labex/project`, don't move it or change the filename.
 - Only `time` module can be used.

@@ -13,5 +13,5 @@ folder_create('/home/second_folder')
 
 ## Requirements
 
-- The path of `folder_create.py` is `/home/labex`, don't move it, and don't change the filename or function name.
+- The path of `folder_create.py` is `/home/labex/project`, don't move it, and don't change the filename or function name.
 - Do nothing if the folder already exists.
