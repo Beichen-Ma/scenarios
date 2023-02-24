@@ -1,0 +1,77 @@
+{
+  "type": "challenge",
+  "title": "Copying Files from Local to Remote using scp.",
+  "description": "Copy Files from Your Local Machine to a Remote Server Using the scp Command.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Whether the file exists.",
+        "text": "step1.md",
+        "skills": ["linux/sftp"],
+        "verify": [
+          {
+            "name": "Check whether the file to be copied exists.",
+            "file": "verify1-1.sh",
+            "hint": "Please touch a file named haha.txtx in /.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Check UserName and Password.",
+        "text": "step2.md",
+        "skills": ["linux/ftp"],
+        "verify": [
+          {
+            "name": "Check the UserName  of the Remote Host.",
+            "file": "verify2-1.sh",
+            "hint": "Please Enter the Correct UserName.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check the Password  of the Remote Host.",
+            "file": "verify2-2.sh",
+            "hint": "Please Enter the Correct Password.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ]
+      },
+      {
+        "title": "Copying Files from Local to Remote using scp.",
+        "text": "step3.md",
+        "skills": ["linux/scp"],
+        "verify": [
+          {
+            "name": "Check whether the file to be copied exists.",
+            "file": "verify3-1.sh",
+            "hint": "Please touch a file named haha.txtx in /.",
+            "timeout": 5,
+            "showstderr": false
+          },
+          {
+            "name": "Check Whether the User Name or Password of the Remote Host is Correct.",
+            "file": "verify3-2.sh",
+            "hint": "Please Enter the Correct User Name or Password.",
+            "timeout": 5,
+            "showstderr": false
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2004"
+  }
+}
