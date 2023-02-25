@@ -1,0 +1,55 @@
+{
+    "type": "challenge",
+    "title": "Separate Processes",
+    "description": "In this challenge, you will create a Python program that uses the `multiprocessing` module to perform parallel computation on a large dataset.",
+    "difficulty": "Beginner",
+    "time": 5,
+    "details": {
+        "steps": [
+            {
+                "title": "Multiprocessing Programming",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Test of sum_multiprocessing.py",
+                        "file": "verify1.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "python/multiprocessing",
+                    "python/for_loop",
+                    "python/math_operator",
+                    "python/return_values",
+                    "python/function_basic",
+                    "python/function_arguments"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "sum_multiprocessing.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "*_test.py",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    }
+}
